@@ -113,7 +113,7 @@
     }
 
     /* Style bouton spécial */
-    .btn-math {
+    .btn{
       display: inline-block;
       background: #000000;
       color: white;
@@ -124,88 +124,52 @@
       cursor: pointer;
       text-decoration: none;
     }
-     .btn-math:hover {
+     .btn:hover {
       background: #383f45;
     }
-
-    .btn-dd:hover {
-      background: #383f45;
-    }
-     .btn-dd {
-      display: inline-block;
-      background: #000000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn-dd.hover {
-      background: #383f45;
-    }
-     .btn-dm {
-      display: inline-block;
-      background: #000000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn-dm:hover {
-      background: #383f45;
-    }
-     .btn-lc {
-      display: inline-block;
-      background: #000000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn-lc:hover {
-      background: #383f45;
-    }
-        .btn-prob {
-      display: inline-block;
-      background: #000000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn-prob:hover {
-      background: #383f45;
-    }
-     button {
+      button {
       margin: 8px; /* espace autour de chaque bouton */
     }
     a {
   margin: 10px;
     }
+    }
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 
-   footer {
-  margin-top: auto;
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 14px;
+  .nav-item {
+    width: 90%;
+    text-align: center;
+  }
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+
   </style>
 </head>
 
@@ -260,15 +224,15 @@
  <h1>Evaluation Seconde Science (S)</h1>
          <h2>🔢Mathématiques</h2>
       <ul>
-        <a href="?" class="btn-math"><strong>PAS ENCORE DISPONIBLE</strong></a>
+        <a href="?" class="btn"><strong>PAS ENCORE DISPONIBLE</strong></a>
      </ul>
          <h2>🧪Science Physique</h2>
       <ul>
-        <a href="?" class="btn-math"><strong>PAS ENCORE DISPONIBLE</strong></a>      
+        <a href="?" class="btn"><strong>PAS ENCORE DISPONIBLE</strong></a>      
       </ul>
       <h2>🧬Science de la vie de la terre</h2>
       <ul>
-        <a href="?" class="btn-math"><strong>PAS ENCORE DISPONIBLE</strong></a>
+        <a href="?" class="btn"><strong>PAS ENCORE DISPONIBLE</strong></a>
       </ul>
     </div>
   </section>
@@ -277,7 +241,7 @@
       <h1>Premier Science Exacte (S1)</h1>
          <h2>🔢Mathématiques</h2>
       <ul>
-        <a href="?" class="btn-math"><strong>PAS ENCORE DISPONIBLE</strong></a>
+        <a href="?" class="btn"><strong>PAS ENCORE DISPONIBLE</strong></a>
       </ul>
     </div>
   </section>
@@ -286,19 +250,19 @@
       <h2>Premier Science Experimental (S2)</h2>
       <h2>🧪Science Physique</h2>
       <ul>
-        <a href="D1-1S2-2025-lsll_wahabdiop.pdf" class="btn-math"><strong>🧪DV1 DU PREMIER SEMESTRE 1S2/S1(1) </strong></a>
-        <a href="D1-1S2-2025-rdk_wahabdiop.pdf" class="btn-dd"><strong>🧪DV1 DU PREMIER SEMESTRE 1S2/S1(2)</strong></a>
-        <a href="D1-1S1-2025-lsll_wahabdiop.pdf" class="btn-math"><strong>🧪DV1 DU PREMIER SEMESTRE 1S1/S2(1)</strong></a>
-        <a href="D2-1S2-2025-rdk_wahabdiop.pdf" class="btn-dd"><strong>🧪DV2 DU PREMIER SEMESTRE 1S1/S2(1)</strong></a>
-        <a href="D2-1S1-2025-iadb_wahabdiop.pdf" class="btn-dm"><strong>🧪DV2 DU PREMIER SEMESTRE 1S1/S2(2) </strong></a>
+        <a href="D1-1S2-2025-lsll_wahabdiop.pdf" class="btn"><strong>🧪DV1 DU PREMIER SEMESTRE 1S2/S1(1) </strong></a>
+        <a href="D1-1S2-2025-rdk_wahabdiop.pdf" class="btn"><strong>🧪DV1 DU PREMIER SEMESTRE 1S2/S1(2)</strong></a>
+        <a href="D1-1S1-2025-lsll_wahabdiop.pdf" class="btn"><strong>🧪DV1 DU PREMIER SEMESTRE 1S1/S2(1)</strong></a>
+        <a href="D2-1S2-2025-rdk_wahabdiop.pdf" class="btn"><strong>🧪DV2 DU PREMIER SEMESTRE 1S1/S2(1)</strong></a>
+        <a href="D2-1S1-2025-iadb_wahabdiop.pdf" class="btn"><strong>🧪DV2 DU PREMIER SEMESTRE 1S1/S2(2) </strong></a>
        </ul>
        <h2>🧬Science de la vie de la terre</h2>
       <ul>
-        <a href="?" class="btn-math"><strong>PAS ENCORE DISPONIBLE</strong></a>
+        <a href="?" class="btn"><strong>PAS ENCORE DISPONIBLE</strong></a>
       </ul>
        <h2>🔢Mathématiques</h2>
       <ul>
-        <a href="?" class="btn-math"><strong>PAS ENCORE DISPONIBLE</strong></a>
+        <a href="?" class="btn"><strong>PAS ENCORE DISPONIBLE</strong></a>
       </ul>
     </div>
   </section>
@@ -307,10 +271,10 @@
     <h1>Terminal Science Exacte (S1)</h1>
       <ul>
       <h2>🔢Mathematique</h2>
-        <a href="DEVOIR SURVEILLE N01 DU PREMIER SEMESTRE DE MATHEMATIQUES(M.DIALLO)_080543.pdf" class="btn-math"><strong>🔢DEVOIR SURVEILLE N01 DU PREMIER SEMESTRE DE MATHEMATIQUES</strong></a>
-        <a href="TS1 DEVOIR ZONAL  25.pdf" class="btn-dd"><strong>🔢TS1 DEVOIR N.2 DU PREMIER SEMESTRE</strong></a>
-        <a href="TS1_DEVOIR_N2.pdf" class="btn-dd"><strong>🔢TS1 DEVOIR N2</strong></a>
-        <a href="devoir.pdf" class="btn-math"><strong>🔢TS1 DEVOIR N1 PREMIER SEMESTRE</strong></a>
+        <a href="DEVOIR SURVEILLE N01 DU PREMIER SEMESTRE DE MATHEMATIQUES(M.DIALLO)_080543.pdf" class="btn"><strong>🔢DEVOIR SURVEILLE N01 DU PREMIER SEMESTRE DE MATHEMATIQUES</strong></a>
+        <a href="TS1 DEVOIR ZONAL  25.pdf" class="btn"><strong>🔢TS1 DEVOIR N.2 DU PREMIER SEMESTRE</strong></a>
+        <a href="TS1_DEVOIR_N2.pdf" class="btn"><strong>🔢TS1 DEVOIR N2</strong></a>
+        <a href="devoir.pdf" class="btn"><strong>🔢TS1 DEVOIR N1 PREMIER SEMESTRE</strong></a>
        </ul>
     </div>
   </section>
@@ -319,12 +283,12 @@
     <h1>Terminal Science Experimental (S2)</h1>
       <h2>🔢Mathematique</h2>
       <ul>
-        <a href="DEVOIR SURVEILLE N01 DU PREMIER SEMESTRE DE MATHEMATIQUES(M.DIALLO)_080543.pdf" class="btn-math"><strong>🔢DEVOIR N1 DU PREMIER SEMESTRE</strong></a>
+        <a href="DEVOIR SURVEILLE N01 DU PREMIER SEMESTRE DE MATHEMATIQUES(M.DIALLO)_080543.pdf" class="btn"><strong>🔢DEVOIR N1 DU PREMIER SEMESTRE</strong></a>
       <h2>🧪Science Physique</h2>
-        <a href="TS2 _ DV1 PREMIER SEMESTRE.pdf" class="btn-dd"><strong>🧪TS2 DV1 PREMIER SEMESTRE</strong></a>
-        <a href="Devoirs N1du 1er semestre .pdf" class="btn-dd"><strong>🧪Devoirs N1 DU 1er SEMESTRE</strong></a>
+        <a href="TS2 _ DV1 PREMIER SEMESTRE.pdf" class="btn"><strong>🧪TS2 DV1 PREMIER SEMESTRE</strong></a>
+        <a href="Devoirs N1du 1er semestre .pdf" class="btn"><strong>🧪Devoirs N1 DU 1er SEMESTRE</strong></a>
       <h2>🧬Science de la vie de la terre</h2>
-        <a href="?" class="btn-dm"><strong>PAS ENCORE DISPONIBLE</strong></a>
+        <a href="?" class="btn"><strong>PAS ENCORE DISPONIBLE</strong></a>
     </div>
   </section>
   
